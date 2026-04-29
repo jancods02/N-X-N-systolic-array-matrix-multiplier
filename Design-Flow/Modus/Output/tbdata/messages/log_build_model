@@ -1,0 +1,127 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model -cell systolic_array_top -designtop systolic_array_top -allowmissingmodules no -workdir /projects/2025H1230098P/cadence/PROJECT/test_scripts -designsource /projects/2025H1230098P/cadence/PROJECT/test_scripts/systolic_array_top.test_netlist.v -stdout summary -techlib /linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/slow.v  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/PROJECT/test_scripts/testresults/logs/log_build_model_041126004649-376629000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Saturday Apr 11 00:46:49 2026  IST
+            Host machine is lenovo-56.pilani.bits-pilani.ac.in, x86_64 running Linux 4.18.0-425.19.2.el8_7.x86_64.
+            This job is process number 1063877.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /projects/2025H1230098P/cadence/PROJECT/test_scripts
+
+            -designtop systolic_array_top
+            -TECHLIB /linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/slow.v
+            -LOGFILE /projects/2025H1230098P/cadence/PROJECT/test_scripts/testresults/logs/log_build_model_041126004649-376629000
+            -STDOUT summary
+            -DESIGNSOURCE /projects/2025H1230098P/cadence/PROJECT/test_scripts/systolic_array_top.test_netlist.v
+          + -allowmissingmodules no
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "/projects/2025H1230098P/cadence/PROJECT/test_scripts/systolic_array_top.test_netlist.v"
+Search Order  2:  "/linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/slow.v"
+
+
+
+Reading Verilog data from /projects/2025H1230098P/cadence/PROJECT/test_scripts/systolic_array_top.test_netlist.v
+
+Verilog Parser complete - 1 modules, 0 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/slow.v
+
+Verilog Parser complete - 480 modules, 1855 gates, 3 user defined primitives.
+
+
+
+INFO (TEI-196): Build Model - Hierarchical Model Build starting: [end TEI_196] 
+
+WARNING (TEI-110): Pin 'NOTIFIER' of 'cell udp_dff' has no external net connection for any usage in the design. Cell contents file: '/linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/slow.v'.  [end TEI_110] 
+
+
+Number of blocks in the hierarchical model is: 137,966.
+
+Number of technology library cell instances in the hierarchical model is: 17,350.
+
+
+INFO (TEI-197): Build Model - Hierarchical Model Build completed. [end TEI_197] 
+
+
+
+INFO (TEI-198): Build Model - Flat Model Build starting: [end TEI_198] 
+
+ defaultTIE = X
+ defaultDFN = T
+
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+        137,966  Blocks                      88,146  Blocks
+        430,826  Pins                        88,146  Nodes
+        234,055  Nets
+
+Primary Inputs:                      Primary Outputs:
+         29  Input Only                     1,026  Output Only
+          0  Input/Output                       0  Input/Output
+         29  Total Inputs                   1,026  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+          0  Tied to 0                          0  Two-State
+          0  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+          0  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+      4,517  MUX2s
+          0  Latches
+
+
+      3,241  Rising  Edge Flop w/Set-Dominant and Reset Port
+      3,241  Total Flops
+
+     17,350  Technology Library Cell Instances
+
+[end TLM_055] 
+Optimization removed logic for 3 of 43 cells in this design.
+
+Optimization removed a total of 12,964 tied Latch Ports.
+Optimization removed a total of 16,205 non-controlling inputs.
+Optimization removed a total of 34,294 dangling logic nodes.
+
+
+
+INFO (TEI-199): Build Model - Flat Model Build completed.  [end TEI_199] 
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =          139,369,456  bytes
+
+                      CPU Time =    0:00:00.87
+                  Elapsed Time =    0:00:01.31                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+

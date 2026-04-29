@@ -1,0 +1,35 @@
+Enabling path groups and categories...
+Enabling path groups and categories done.
+Creating worst chain report...
+Creating worst chain report done.
+
+  x rst
+  |   slack 4.917ns .../rst -> .../D (distance: 708.945um)
+  |                 delays=(launch: 2.000ns, datapath: 3.440ns, capture: 0.456ns, adjust: 9.900ns)
+  |                 launch no clock
+  |                 capture clock sys_clk in analysis view worst
+  |                 path group default
+  o ctrl_state_reg[1]
+  |     .../CK @(unknown) constraint=(unknown) chosen=(unknown)
+  |            location=(74.965,92.655) slew=(launch: 0.195ns, capture: 0.184ns)
+  |   *WNS* 4.885ns .../Q -> .../D (distance: 458.635um)
+  |                 delays=(launch: 0.006ns, datapath: 5.466ns, capture: 0.457ns, adjust: 9.900ns)
+  |                 launch/capture clock sys_clk in analysis view worst
+  |                 path group reg2reg
+  o ROW_GEN[4].fifo_b_dout_reg[0]
+  |     .../CK @(unknown) constraint=(unknown) chosen=(unknown)
+  |            location=(175.595,291.015) slew=(launch: 0.191ns, capture: 0.181ns)
+  |   slack 5.308ns .../Q -> .../D (distance: 236.350um)
+  |                 delays=(launch: 0.007ns, datapath: 5.207ns, capture: 0.452ns, adjust: 9.900ns)
+  |                 launch/capture clock sys_clk in analysis view worst
+  |                 path group reg2reg
+,-o ROW_GEN[0].COL_GEN[4].pe_inst_result_reg[15]
+| |     .../CK @(unknown) constraint=(unknown) chosen=(unknown)
+| |            location=(148.625,362.065) slew=(launch: 0.187ns, capture: 0.177ns)
+| |   slack 9.127ns .../Q -> .../D (distance: 37.240um)
+| |                 delays=(launch: 0.001ns, datapath: 5.213ns, capture: 0.452ns, adjust: 9.900ns)
+| |                 launch/capture clock sys_clk in analysis view worst
+| |                 path group reg2reg
+`-o ROW_GEN[0].COL_GEN[4].pe_inst_result_reg[15]
+
+

@@ -1,0 +1,60 @@
+Starting Command: report_vector_statistics 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/PROJECT/test_scripts/testresults/logs/log_report_vector_statistics_FULLSCAN_040926140324-376543000 [end TDA_015]
+
+
+Test Vector Count Report:
+-------------------------------
+
+  PI stim events............................                     120
+  PO measure events.........................                     118
+  Latch stim events.........................                     119
+  Latch measure events......................                     119
+  Clock pulse events........................                     118
+
+  Sequence Loop iterations..................                       0
+  Fast Forward (effective) Loop iterations..                       0
+
+  Random Number Generator Seed..............    14751176175628486621
+
+  Test Patterns.............................                     594
+  Test Sequences............................                     119
+  Test Procedures...........................                      12
+  Tester Loops..............................                       2
+  Test Sections.............................                       2
+  Measure Current Events....................                       0
+  Flat Weight Sets..........................                       0
+  Weighted Weight Sets......................                       0
+  Internal Response Events..................                       0
+  DC Weighted Weight Sets...................                       0
+  AC Weighted Weight Sets...................                       0
+  Number of miscomparing measures set to X..                       0
+  Number of Tests containing 
+  Diagnostic_Measure_Latch events...........                       0
+  Init Sequences............................                       2
+  Setup Sequences...........................                       0
+
+
+  Load Channel Mask Events..................                       0
+  Number of Loads at the Tester ............                       0
+  Last Commit Timestamp (hiertest)..........                       0 
+
+
+---------------------------------------------------------------------------
+                            Test Statistics                              
+---------------------------------------------------------------------------
+  Type                                                    Number of Tests       
+---------------------------------------------------------------------------
+  Scan                                                             1
+  Logic Delay                                                      0
+  Logic Static                                                   118
+  Iddq                                                             0
+  Path                                                             0
+  LBIST Scan                                                       0
+  LBIST Logic Delay                                                0
+  LBIST Logic Static                                               0
+  Other                                                            0
+---------------------------------------------------------------------------
+  Total                                                          119
+
+

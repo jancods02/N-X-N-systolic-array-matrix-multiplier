@@ -1,0 +1,69 @@
+Starting Command: report_fault_statistics 
+
+INFO (TDA-015): Log File: /projects/2025H1230098P/cadence/PROJECT/test_scripts/testresults/logs/log_report_fault_statistics_FULLSCAN_041126004918-145280000 [end TDA_015]
+
+Logic Model(GM)   04/10/26
+                  19:16:52
+File Id     faultModel        faultStatus
+Created (GM)  04/10/26           04/10/26
+              19:17:05           19:17:05
+Modified(GM)  04/10/26           04/10/26
+              19:17:05           19:17:18
+Code Level        2020.2             2020.2            
+Max Fault Id        143478
+
+Fault Model Type:   Cell Boundary
+
+
+Global Ignored Static Fault Count                 0
+Global Ignored Dynamic Fault Count                0
+
+
+INFO (TFM-701):  Fault Statistics for Testmode:  FULLSCAN  : 
+
+
+                 ---- TCov  ---- ------------------------ Testmode Faults ----------------------- ------------------------- Global Faults ------------------------
+                 Testmode Global        Total       Tested     Possibly    Redundant     Untested        Total       Tested     Possibly    Redundant     Untested
+
+Total Static        99.99  99.99       143478       143475            0            0            3       143478       143475            0            0            3
+Collapsed Static    99.99  99.99        92538        92535            0            0            3        92538        92535            0            0            3
+PI Static          100.00 100.00           58           58            0            0            0           58           58            0            0            0
+PO Static          100.00 100.00         2052         2052            0            0            0         2052         2052            0            0            0
+
+Total Dynamic                               0
+
+Parametric        
+
+IDDq                 0.00   0.00       143478            0                                 143478       143478            0                                 143478
+
+Path                 0.00   0.00            0            0                                      0            0            0                                      0
+
+
+
+[end TFM_701]
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           32,202,208  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.01                    [end TDA_001]
+
+     Date Ended:  Saturday Apr 11 00:49:20 2026  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-701):  Fault Statistics for Testmode:  FULLSCAN  : 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

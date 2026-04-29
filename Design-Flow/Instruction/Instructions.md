@@ -1,0 +1,8 @@
+* In Innovus after you make the layout implementation complete routing:
+* You must save and export the routed netlist, extract the Parasitics and def file alongwith sdc file from innovus this is a mandatory step and is mentioned in video as well.
+* After you export it open tempus and import only the routed netlist and constraints file from innovus and add all timing libraries it is clearly mentioned in video.
+* After adding the netlist, you will see the schematic go to timing and report the violating paths the paths will plotted in form of histogram,if any violating paths, you will need to either change your input constraints in genus like changing clock time or delay else you have to do eco Design the commands are written in tcl file inside Tempus folder with name sta.tcl. Make sure you print the report if you have done eco.
+* If you want to run eco commands have to run tempus in eco mode with command tempus -eco.
+* For voltus, the same netlist and constraints file have to be imported and alongwith that spef and def file are also mandatory as they contain information on parasitics and layout respectively.
+* Run power analysis for both static and dynamic power, dynamic power make sure you have the valuc change dump (.vcd) file available with you it can be written in testbench during functional verification in NCSIM.
+
