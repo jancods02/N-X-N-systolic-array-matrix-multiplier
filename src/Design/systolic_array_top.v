@@ -17,16 +17,13 @@ module systolic_array_top #(
     wire [N-1:0] fifo_rd;
     wire [N-1:0] row_empty, col_empty, row_full, col_full;
     
-    // Wires for inter-PE data movement (statically sized for N+1 to handle boundaries)
     wire [DATA_WIDTH-1:0] horizontal_wires [0:N][0:N];
     wire [DATA_WIDTH-1:0] vertical_wires   [0:N][0:N];
     
     // Internal 2D array to collect PE results before flattening
     wire [(2*DATA_WIDTH)-1:0] result_internal [0:N-1][0:N-1];
 
-    // ---------------------------------------------------------
-    // 1. CONTROLLER INSTANTIATION
-    // ---------------------------------------------------------
+    // controller
     controller #(.N(N)) ctrl (
         .clk(clk),
         .rst(rst),
@@ -57,7 +54,7 @@ module systolic_array_top #(
             // Column FIFOs (Matrix B)
             FIFO #(.WIDTH(DATA_WIDTH), .DEPTH(N)) fifo_b (
                 .clk(clk), .rst(rst),
-                .wr(external_col_wr[r]), // Reusing 'r' index for columns
+                .wr(external_col_wr[r]), 
                 .rd(fifo_rd[r]),
                 .din(din),
                 .dout(vertical_wires[0][r]),
@@ -77,8 +74,6 @@ module systolic_array_top #(
                     .result(result_internal[r][c])
                 );
 
-                // --- THE FIX: INDEXED PART-SELECT ---
-                // Connects the 2D PE result to the 1D output vector
                 assign C_flattened[((r*N) + c)*2*DATA_WIDTH +: 2*DATA_WIDTH] = result_internal[r][c];
             end
         end

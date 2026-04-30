@@ -12,7 +12,6 @@ module tb_systolic_array;
     wire done;
     wire [(N*N)*OUT_WIDTH-1 : 0] C_flattened; 
     
-    // --- STORAGE FOR PRINTING ---
     reg [DATA_WIDTH-1:0] A_matrix [0:N-1][0:N-1]; // Added to store A
     reg [DATA_WIDTH-1:0] B_matrix [0:N-1][0:N-1]; // Added to store B
     reg [OUT_WIDTH-1:0]  C_matrix [0:N-1][0:N-1];
